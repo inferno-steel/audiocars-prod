@@ -1,0 +1,136 @@
+.favorites{
+    margin-bottom: 140px;
+
+    @media (max-width: $mobile) {
+        margin-bottom: 75px;
+    }
+}
+
+.card-favorites{
+    position: relative;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 30px;
+    margin-bottom: 20px;
+
+    &__close{
+        position: absolute;
+        right: 30px;
+        top: 40px;
+        cursor: pointer;
+
+        svg{
+            width: 26px;
+            height: 26px;
+        }
+    }
+
+    &__image{
+        max-width: 462px;
+        height: 286px;
+    }
+
+    &__content{
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        flex: 0 1 450px;
+    }
+
+    &__title{
+        font-size: 24px;
+    }
+
+    &__quantity{
+        display: flex;
+        gap: 10px;
+        color: #00960D;
+        margin-top: auto;
+        margin-bottom: 30px;
+    }
+
+    &__price{
+        font-size: 40px;
+    }
+
+    &__button{
+        display: flex;
+        align-items: center;
+        margin-top: auto;
+        gap: 30px;
+        flex: 2 0 auto;
+
+        svg{
+            width: 32px;
+            height: 28px;
+            fill: $mainRed;
+            stroke: $mainRed;
+        }
+    }
+
+    &__counter{
+        flex-basis: 541px;
+    }
+
+    &__btn{
+        flex: 1 1 541px;
+        padding: 14.5px 5px;
+    }
+
+    &__link{
+        flex: 1 0 auto;
+    }
+
+    @media (max-width: $tablet) {
+        flex-direction: column;
+        padding:  65px 30px 20px 30px;
+        gap: 22px;
+
+        &__close{
+            top: 17px;
+        }
+
+        &__image{
+            height: 286px;
+        }
+
+        &__content{
+            flex-basis: 0;
+            padding-top: 5px;
+        }
+
+        &__title{
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        &__price{
+            font-size: 24px;
+        }
+
+        &__quantity{
+            margin-bottom: 20px;
+        }
+
+        &_button{
+            gap: 30px;
+        }
+
+        &__btn{
+            padding: 11px 5px;
+        }
+
+        &__link{
+            order: 2;
+            flex: 0 0 auto;
+
+                svg{
+                width: 36px;
+                height: 32px;
+                }
+        }
+  }
+}

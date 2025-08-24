@@ -1,0 +1,15 @@
+// Базовые стили
+body {
+  font-family: "Cygre";
+  font-weight: 400;
+  background-color: $mainWhite;
+  color: $mainDark;
+  letter-spacing: 0.031rem;
+  line-height: 1.54;
+}
+
+.container {
+  max-width: $maxWidthContainer + px;
+  padding: 0 20px;
+  margin: 0 auto;
+}

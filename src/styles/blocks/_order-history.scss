@@ -1,0 +1,52 @@
+.order-history {
+
+      &__breadcrumb{
+        ul{
+            margin-bottom: 70px;
+        }
+    }
+
+    text-transform: uppercase;
+
+    &__wrap {
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+    &__list{
+        flex-basis: 1000px;
+        @include adaptive("margin-right", 145, 1, 1);
+    }
+
+    &__subtitle{
+        display: none;
+    }
+
+    @media (max-width: $tablet) {
+
+        &__breadcrumb{
+            ul{
+                margin-bottom: 59px;
+            }
+        }
+        &__wrap{
+            flex-direction: column;
+            gap: 0;
+        }
+
+        &__list{
+            flex-basis: 0;
+            margin-right: 0;
+        }
+
+        &__title{
+            display: none;
+        }
+
+        &__subtitle{
+            display: block;
+            text-align: left;
+        }
+    }
+}

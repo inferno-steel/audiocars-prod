@@ -1,0 +1,60 @@
+.erorr{
+    margin-bottom: 140px;
+    margin-top: 152px;
+
+    &__title{
+        display: none;
+    }
+
+    &__wrap{
+        max-width: 963px;
+        text-align: end;
+    }
+
+    &__content{
+        font-size: 23px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+
+    &__img{
+        margin-bottom: 72px;
+    }
+
+    &__btn{
+        max-width: 471px;
+    }
+
+    @media (max-width: $tablet) { 
+        &__wrap{
+            text-align: center;
+        }
+
+        &__content{
+            font-size: 16px;
+        }
+
+        &__btn{
+            width: 100%;
+            padding: 12.5px 0;
+        }
+    }
+
+        @media (max-width: $mobile) {
+            margin-top: 142px;
+            margin-bottom: 382px;
+        } 
+
+        &__img{
+            margin-bottom: 50px;
+        }
+
+        &__content{
+            margin-bottom: 79px;
+        }
+
+        &__btn{
+            padding: 10.5px 0;
+        }
+}

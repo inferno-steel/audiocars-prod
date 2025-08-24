@@ -1,0 +1,362 @@
+.order {
+    &__breadcrumb{
+        ul{
+            margin-bottom: 68px;
+        }
+    }
+
+    &__title{
+        margin-bottom: 35px;
+    }
+
+    &__wrap {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        margin-bottom: 140px;
+    }
+
+    &__list {
+        flex: 0 1 636px;
+    }
+
+    @media (max-width: $tablet) {
+        &__wrap {
+            flex-direction: column;
+            margin-bottom: 80px;
+        }
+
+        &__list {
+            max-width: none;
+            order: 1;
+        }
+    }
+
+    @media (max-width: $mobile) {
+
+          &__breadcrumb{
+            ul{
+                margin-bottom: 55px;
+            }
+        }
+        &__title{
+            font-size: 23px;
+        }
+
+        &__wrap{
+            gap: 3px;
+        }
+    }
+}
+
+.form-order {
+    flex: 1 1 auto;
+    text-transform: uppercase;
+
+    &__title {
+        margin-bottom: 30px;
+        font-weight: 700;
+    }
+
+    &__personal {
+        max-width: 963px;
+        margin-bottom: 20px;
+    }
+
+    &__box {
+        display: flex;
+        gap: 20px;
+        flex-basis: 472px;
+    }
+
+    &__input {
+        border: 1.5px solid;
+        border-radius: 5px;
+        width: 100%;
+        min-height: 45px;
+        padding-left: 30px;
+        margin-bottom: 20px;
+
+        &::placeholder {
+            text-transform: uppercase;
+        }
+    }
+
+    &__input:nth-child(5){
+        height: 132px;
+        position: relative;
+
+        &::placeholder{
+            position: absolute;
+            top: 19px;
+        }
+    }
+
+    &__delivery {
+        display: flex;
+        gap: 20px;
+        align-items: baseline;
+        margin-bottom: 40px;
+    }
+
+    &__section-wrap {
+        display: flex;
+        gap: 20px;
+        align-items: baseline;
+        margin-bottom: 25px;
+    }
+
+    &__section {
+        flex-basis: 472px;
+    }
+
+    &__adress {
+        display: flex;
+        flex-direction: column;
+
+        &>.form-order__box {
+            display: none;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__box-wrap {
+        display: flex;
+        gap: 5px;
+        flex: 1 1 auto;
+    }
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 700;
+        margin-bottom: 40px;
+        align-items: center;
+
+        &:nth-child(1) {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__wrap:last-child,
+    &__amount {
+        font-size: 24px;
+    }
+
+    &__button {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    &__copyright {
+        display: flex;
+        gap: 15px;
+    }
+
+    &__label {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+
+    @media (max-width: $tablet) {
+        order: 2;
+
+        &__personal {
+            max-width: none;
+        }
+
+        &__box {
+            display: block;
+
+            &>label {
+                margin-left: 15px;
+                vertical-align: super;
+            }
+
+        }
+
+        &__delivery {
+            &>.form-order__box:nth-child(2) {
+                display: none;
+            }
+        }
+
+        &__section-wrap {
+            display: block;
+        }
+
+        &__adress {
+            &>.form-order__box {
+                display: block;
+                flex-basis: 0;
+                margin-bottom: 40px;
+                margin-top: 10px;
+            }
+        }
+
+        &__button {
+            padding: 15px 0;
+        }
+    }
+
+    @media (max-width: $mobile) {
+        &__title{
+            margin-bottom: 17px;
+        }
+
+        &__box{
+            label{
+                margin-left: 0;
+            }
+        }
+
+        &__button{
+            padding: 11px 0;
+        }
+
+        &__label{
+            align-items: flex-start;
+        }
+    }
+}
+
+.product-order {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    padding: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+
+    &__image {
+        flex: 1 1.3 400px;
+        height: 210px;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__text {
+        display: flex;
+        gap: 30px;
+        align-items: baseline;
+    }
+
+    &__body {
+        display: flex;
+        margin-top: auto;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__close {
+        flex: 1 0 auto;
+    }
+
+    &__price {
+        font-size: 24px;
+    }
+
+    &__counter {
+        gap: 18px;
+        padding: 0 32px;
+        font-size: 20px;
+    }
+
+    @media (max-width: $tabletM) {
+        &__box {
+            flex: 1 2 auto;
+            gap: 25px;
+        }
+
+        &__text {
+            gap: 10px;
+        }
+
+        &__body {
+            flex-direction: column;
+            align-items: baseline;
+        }
+    }
+    
+        @media (max-width: $mobile) {
+            padding: 20px;
+
+            &__image{
+                flex-basis: 198px;
+            }
+
+            &__body{
+                margin-bottom: 8px;
+            }
+
+            &__counter{
+                gap: 22px;
+            }
+        }
+}
+
+.modal-order {
+
+    &__box {
+        margin-bottom: 20px;
+
+        &>label {
+            vertical-align: super;
+            margin-left: 15px;
+        }
+    }
+
+    &__wrapper {
+        margin-bottom: 30px;
+    }
+
+    &__number {
+        max-width: 440px;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    &__input {
+        border: 1.5px solid #000;
+        border-radius: 5px;
+        width: 100%;
+        display: block;
+        height: 45px;
+        padding-left: 20px;
+    }
+
+    &__date {
+        max-width: 172px;
+        margin-bottom: 10px;
+    }
+
+    &__inner {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    &__cvv {
+        max-width: 72px;
+    }
+
+    &__button {
+        width: 100%;
+        padding: 12px 0;
+    }
+
+}

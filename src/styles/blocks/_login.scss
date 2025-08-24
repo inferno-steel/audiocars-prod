@@ -1,0 +1,147 @@
+.account {
+  &__container {
+    display: flex;
+    justify-content: center;
+    margin: 60px 0;
+  }
+
+  &__card {
+    flex-basis: 770px;
+  }
+}
+
+// Вход
+.card-account {
+  &__title {
+    color: $mainDark;
+    margin-bottom: 40px;
+    max-width: none;
+    text-align: center;
+  }
+
+  &__registration {
+    p {
+      margin-bottom: 20px;
+    }
+
+    a {
+      text-decoration: underline;
+      display: inline-flex;
+    }
+  }
+
+  &__login {
+    p {
+      margin-top: 20px;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    &__title {
+      text-align: center;
+    }
+  }
+
+   @media (max-width: $mobile) {
+    &__title {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+// Форма входа
+.form-account {
+  padding: 0 10px;
+  text-transform: uppercase;
+  position: relative;
+  font-size: 14px;
+
+  &__label {
+    color: #666;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  &__input {
+    border: 1.5px solid;
+    border-radius: 5px;
+    padding: 13px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  &__inner {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 10px;
+
+    label {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+
+      input{
+        height: 18px;
+        width: 18px;
+        flex: 0 0 18px;
+
+        &:checked::after{
+          width: 14px;
+          height: 10px;
+        }
+      }
+    }
+
+    span {
+      white-space: nowrap;
+    }
+  }
+
+  &__btn {
+    transition: .2s ease;
+    flex-basis: 288px;
+    border: 1px solid transparent;
+    font-size: 16px;
+
+    &:hover {
+      background-color: $mainWhite;
+      color: $mainRed;
+      border: 1px solid $mainRed;
+    }
+  }
+
+  &__link {
+    span {
+      color: $mainRed;
+      margin-left: 5px;
+    }
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  @media (max-width: $tablet) {
+    &__inner {
+      gap: 30px;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    padding: 0 15px;
+
+    &__label:first-child{
+      margin-bottom: 0;
+    }
+
+    &__label{
+      font-size: 16px;
+    }
+
+    &__btn{
+      padding: 13px;
+      flex: 1 1;
+    }
+  }
+}

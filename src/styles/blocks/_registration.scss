@@ -1,0 +1,80 @@
+.registration {
+  margin-top: 64px;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 140px;
+  }
+
+  &__card {
+    flex-basis: 770px;
+  }
+}
+
+.card-registration{
+  &__title{
+    margin-bottom: 10px;
+    color: #1e1e1e;
+    max-width: none;
+    text-align: center;
+  }
+
+  @media (max-width: $mobile) {
+    &__title{
+        margin-bottom: 25px;
+    }
+  }
+}
+
+.form-registration{
+  padding: 25px 30px;
+  text-transform: uppercase;
+  position: relative;
+  font-size: 14px;
+
+  &__input:nth-child(4){
+    margin-bottom: 15px;
+  }
+
+  &__text{
+    margin-bottom: 25px;
+
+    a{
+      display: inline;
+      text-decoration: underline;
+    }
+  }
+
+  &__btn{
+    max-width: 286px;
+    transition: .2s ease;
+    border: 1px solid rgba(0, 0, 0, 0);
+    font-size: 16px;
+
+      &:hover {
+      background-color: $mainWhite;
+      color: $mainRed;
+      border: 1px solid $mainRed;
+    }
+  }
+  
+  @media (max-width: $mobile) {
+    &__label{
+        margin-bottom: 8px;
+
+        &:first-child{
+            margin-bottom: 5px;
+        }
+    }
+
+    &__input:nth-child(2){
+        margin-bottom: 35px;
+    }
+
+    &__text{
+        margin-bottom: 20px;
+    }
+
+  }
+}
