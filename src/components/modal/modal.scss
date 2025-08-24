@@ -100,6 +100,16 @@
             display: inline-flex;
         }
     }
+
+    @media (max-width: $mobile) {
+        &__wrap{
+            padding: 40px 43px;
+        }
+
+        &__btn{
+            padding: 14px;
+        }
+    }
 }
 
 .modal-success {
@@ -110,9 +120,36 @@
         text-align: center;
     }
 
+    &__title{
+        margin-bottom: 30px;
+    }
+
+    &__text{
+        margin-bottom: 50px;
+    }
+
     @media (max-width:$tablet) {
         p {
             font-size: 16px;
+        }
+    }
+
+    @media (max-width: $mobile) {
+
+        &__title{
+            margin-bottom: 20px;
+        }
+
+        &__text{
+            margin-bottom: 40px;
+        }
+
+        &__wrap{
+            padding: 40px 35px;
+        }
+
+        &__btn{
+            padding: 14px;
         }
     }
 }

@@ -307,6 +307,10 @@
 
 .modal-order {
 
+    &__wrap{
+        padding: 50px 55px 20px 55px;
+    }
+
     &__box {
         margin-bottom: 20px;
 
@@ -356,7 +360,39 @@
 
     &__button {
         width: 100%;
-        padding: 12px 0;
+        padding: 14px 0;
     }
 
+    &__fix{
+        opacity: 0;
+    }
+
+    @media (max-width: $tabletM) {
+
+         &__wrap{
+            padding: 50px 55px 30px 55px;
+         }
+
+        &__title{
+            font-size: 36px;
+        }
+
+        &__fix{
+            display: none;
+        }
+    }
+
+}
+
+.modal-completed{
+
+    &__text{
+        text-align: center;
+    }
+
+    @media (max-width: $tabletM) {
+        &__title{
+            font-size: 36px;
+        }
+    }
 }
